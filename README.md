@@ -5,8 +5,9 @@ Installs libvips on Ubuntu 14.04 as base image.
 
 ## Supported tags
 
-- [`7.40`, `latest`](https://github.com/marcbachmann/dockerfile-libvips/tree/master)
+- [`7.40`](https://github.com/marcbachmann/dockerfile-libvips/tree/master)
 - [`7.42`](https://github.com/marcbachmann/dockerfile-libvips/tree/7.42.3)
+- [`8.0.2`, `latest`](https://github.com/marcbachmann/dockerfile-libvips/tree/8.0.2)
 
 
 ## How to use

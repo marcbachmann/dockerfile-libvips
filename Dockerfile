@@ -19,7 +19,7 @@ RUN \
   curl -O http://www.vips.ecs.soton.ac.uk/supported/$LIBVIPS_VERSION_MAJOR.$LIBVIPS_VERSION_MINOR/vips-$LIBVIPS_VERSION.tar.gz && \
   tar zvxf vips-$LIBVIPS_VERSION.tar.gz && \
   cd vips-$LIBVIPS_VERSION && \
-  ./configure --enable-debug=no --enable-docs=no --without-python --without-orc --without-fftw --without-gsf $1 && \
+  ./configure --enable-debug=no --without-python --without-orc --without-fftw --without-gsf $1 && \
   make && \
   make install && \
   ldconfig
