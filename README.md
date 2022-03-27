@@ -1,7 +1,6 @@
 # [Dockerfile](https://registry.hub.docker.com/u/marcbachmann/libvips/) for libvips
 
-Installs libvips on Ubuntu 14.04 as base image.
-
+Installs libvips on `ubuntu:20.04` as base image.
 
 ## Supported tags
 
@@ -11,7 +10,8 @@ Installs libvips on Ubuntu 14.04 as base image.
 - [`8.1.0`](https://github.com/marcbachmann/dockerfile-libvips/tree/8.1.0)
 - [`8.2.3`](https://github.com/marcbachmann/dockerfile-libvips/tree/8.2.3)
 - [`8.4.1`](https://github.com/marcbachmann/dockerfile-libvips/tree/8.4.1)
-- [`8.6.2`, `latest`](https://github.com/marcbachmann/dockerfile-libvips/tree/8.6.2)
+- [`8.6.2`](https://github.com/marcbachmann/dockerfile-libvips/tree/8.6.2)
+- [`8.12.2`](https://github.com/marcbachmann/dockerfile-libvips/tree/8.12.2)
 
 ## How to use
 
@@ -26,7 +26,7 @@ Or extend from it:
 ```
 echo '
 FROM marcbachmann/libvips
-RUN apt-get install curl && curl -sL https://deb.nodesource.com/setup_8.x | bash && apt-get install nodejs
+RUN apt-get update && apt-get install curl && curl -fsSL https://deb.nodesource.com/setup_16.x | bash && apt-get install nodejs
 ' > Dockerfile
 
 docker build -t libvips-with-node .
